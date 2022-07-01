@@ -1,11 +1,14 @@
 * {
     margin: 0;
     padding: 0;
+    /* background-color:red; */
 }
 
 .navbar {
+    /* set it as sticky */
+    position: sticky;
     background: #0099CC;
-    background: linear-gradient(to bottom, #1C7ADD, #87D0EE);
+    background: rgb(213, 56, 103);
     color: #FFF;
     height: 45px;
     width: (99)vw;
@@ -15,16 +18,18 @@
 }
 
 .navbar .title {
-    font-size: 20px;
-    color: rgb(0, 0, 0);
+    /* @import url('https://fonts.googleapis.com/css2?family=Fascinate&display=swap');     */
+    /* font-family: 'Fascinate', cursive; */
+    color: rgb(255, 255, 255);
     margin-left: 10px;
     margin-top: -5px;
-    transform: translate(40vw,1.5vh);
+    transform: translate(0vw, 1.5vh);
+    width: 5vw;
 
 }
 
 .navbar .navbar-menu ul {
-    transform: translate(0vw, -1.25vh);
+    transform: translate(8vw, -1vh);
 }
 
 .navbar .navbar-menu li {
@@ -50,21 +55,98 @@
     width: 100%;
 }
 
-.navbar .search-box input{
+.navbar .search-box input {
     /* float: right; */
     margin-right: 10px;
     width: 28vw;
     height: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    transform: translate(65vw, -4.15vh);
+    transform: translate(65vw, -3.8vh);
 }
 
 .navbar .search input {
     width: 2.6vw;
     height: 5vh;
-    transform: translate(94.5vw, -8.5vh);
+    transform: translate(95vw, -8vh);
     background-size: cover;
-    background: linear-gradient(to bottom, #1C7ADD, #87D0EE);
+    background: rgb(213, 56, 103);
 }
 
+.display {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 65vh;
+    background-image: url(images/layered-waves-haikei.svg);
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+.display .text p {
+    font-family: 'Roboto', sans-serif;
+    width: 40vw;
+    height: 35vh;
+    transform: translate(-25vw, -10vh);
+    font-size: 3vw;
+    color: rgb(175, 17, 180);
+}
+
+.popular{
+    font-family: 'Courier New', Courier, monospace;
+    display: flex;
+    flex-direction: column;
+    background: linear-gradient(to bottom, #8c366c, #6e64e7);
+    width: 100%;
+    height: 90vh;
+    /* transform: translate(1vw, 3vh); */
+}
+.popular .memes{
+    display: grid;
+    width: 100%;
+    height: 65vh;
+    grid-template-columns: repeat(3, 0.45fr);
+    row-gap: 7vh;
+}
+.popular .memes .items  {
+    /* padding: 20px; */
+    display: inline-grid;
+    width: 12vw;
+    height: 30vh;
+    border: 5px ridge red;
+    transform: translate(10vw,4vh);
+    font-size: 2.4vh ;
+    /* justify-content: space-evenly; */
+    align-items: center;
+    /* column-gap: 150px; */
+    background-color: #FFF;
+}
+.memes  img{
+    width: 12vw;
+    height: 25vh;
+    transform: translate(0vw, 0vh);
+    justify-content: center;
+    align-items: center;
+}
+
+.popular  a button{
+    width: 95%;
+    /* height: 90%; */
+    font-family: arial;
+    color: #14396A !important;
+    font-size: 18px;
+    text-shadow: 1px 1px 0px #7CACDE;
+    box-shadow: 1px 1px 0px #BEE2F9;
+    padding: 10px 2px;
+    border-radius: 10px;
+    /* border: 2px solid #3866A3; */
+    background: #63B8EE;
+    background: linear-gradient(to top, #63B8EE, #468CCF);
+}
+
+.popular  a button:hover{
+    cursor: pointer;
+    background: linear-gradient(to top, #468CCF, #63B8EE);
+}
